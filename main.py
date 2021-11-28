@@ -11,6 +11,11 @@ app = Flask(__name__, template_folder='templates', static_folder='static')
 def hello():
     return "Hello World!"
 
+@app.route('/demo')
+def demo():
+    return "Another demo change."
+
+
 
 @app.route('/tutorial')
 def tutorial():
